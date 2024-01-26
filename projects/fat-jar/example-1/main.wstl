@@ -1,0 +1,9 @@
+Hello: "Example 1"
+someString: "some string"
+someObject: someValue()
+
+
+def someValue(){
+  a: "A"
+  b: "B"
+}

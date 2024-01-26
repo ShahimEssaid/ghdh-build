@@ -1,0 +1,4 @@
+[submodule "git-submodule/upstream"]
+	path = git-submodule/upstream
+	url = https://github.com/GoogleCloudPlatform/healthcare-data-harmonization.git
+	branch = master

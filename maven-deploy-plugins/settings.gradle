@@ -1,0 +1,121 @@
+rootProject.name = 'maven-deploy-plugins'
+
+
+includeBuild("../maven-deploy-runtime/")
+
+include ':test'
+project(':test').projectDir = file('../git-submodule/upstream/plugins/test')
+
+include ':example'
+project(':example').projectDir = file('../git-submodule/upstream/plugins/example')
+
+include ':logging'
+project(':logging').projectDir = file('../git-submodule/upstream/plugins/logging')
+
+include ':common'
+project(':common').projectDir = file('../git-submodule/upstream/plugins/harmonization/common')
+
+include ':hdev2'
+project(':hdev2').projectDir = file('../git-submodule/upstream/plugins/harmonization/hdev2')
+
+
+include ':reconcommon'
+project(':reconcommon').projectDir = file('../git-submodule/upstream/plugins/reconciliation/reconcommon')
+
+include ':reconv2'
+project(':reconv2').projectDir = file('../git-submodule/upstream/plugins/reconciliation/reconv2')
+
+
+gradle.allprojects {
+
+    apply plugin: 'maven-publish'
+
+    final def PROJECT_REF = delegate
+
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+
+    pluginManager.withPlugin('java') {
+
+        java {
+//            withJavadocJar()
+            withSourcesJar()
+        }
+
+
+        publishing {
+            publications.create("maven${project.name}", MavenPublication) {
+                from components.java
+                println("===========\nPROJECT NAME: ${project.name}")
+                switch (project.name){
+                    case "example":
+                        groupId = "${groupIdPrefix}.com.google.cloud.verticals.foundations.dataharmonization.plugins"
+                        break
+                    case "test":
+                        groupId = "${groupIdPrefix}.com.google.cloud.verticals.foundations.dataharmonization.plugins"
+                        break
+                    case "logging":
+                        groupId = "${groupIdPrefix}.com.google.cloud.verticals.foundations.dataharmonization.plugins"
+                        break
+                    case "common":
+                        groupId = "${groupIdPrefix}.com.google.cloud.verticals.foundations.dataharmonization.plugins.harmonization"
+                        break
+                    case "hdev2":
+                        groupId = "${groupIdPrefix}.com.google.cloud.verticals.foundations.dataharmonization.plugins.harmonization"
+                        break
+                    case "reconcommon":
+                        groupId = "${groupIdPrefix}.com.google.cloud.verticals.foundations.dataharmonization.plugins.reconciliation"
+                        break
+                    case "reconv2":
+                        groupId = "${groupIdPrefix}.com.google.cloud.verticals.foundations.dataharmonization.plugins.reconciliation"
+                        break
+
+                    default:
+                        throw new IllegalStateException("Project named: ${project.name} is not handled in Maven group.")
+                }
+                version = "${version}"
+            }
+        }
+
+        tasks.withType(Javadoc) {
+            // https://docs.gradle.org/current/dsl/org.gradle.api.tasks.javadoc.Javadoc.html#org.gradle.api.tasks.javadoc.Javadoc:failOnError
+            // https://stackoverflow.com/questions/35435173/prevent-javadoc-from-failing-gradle-build#answer-59892052
+            failOnError false
+        }
+    }
+
+    println("Project: ${project}")
+    // TODO: not sure why this is needed for this project but not the test one.
+    // Adding it to the test one anyway to make sure the POM is valid.
+    pluginManager.withPlugin('java-library') {
+
+// TODO: figure out why this doesn't work. There is no delegate for the version closure.
+// see advanced usage here: https://docs.gradle.org/8.4/dsl/org.gradle.api.artifacts.dsl.DependencyHandler.html
+//        dependencies {
+//            println("Project: ${project}  dependencies ")
+//            println("API: " + gradleApi().toString())
+//            api ('com.google.cloud.verticals.foundations.dataharmonization:runtime') {
+//
+//                println("Project: ${project} version")
+//                println("Delegate: " + delegate.toString())
+//                println("Delegate: " + delegate.dump())
+//                println("Version: " + version.toString())
+//                version {
+//                    println("Project: ${project} requrie")
+//                    println("Delegate: " + delegate.toString())
+//                    strictly("${version}")
+//                }
+//            }
+//        }
+        // TODO: this works instead of the above
+        project.dependencies {
+            api group: "com.google.cloud.verticals.foundations.dataharmonization", name: "runtime", version: "${version}"
+            api group: "com.google.cloud.verticals.foundations.dataharmonization", name: "testutil", version: "${version}"
+        }
+    }
+
+}

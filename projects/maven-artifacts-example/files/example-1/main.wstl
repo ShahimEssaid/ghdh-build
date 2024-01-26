@@ -1,0 +1,9 @@
+Hello: "Example 1"
+f1: "some string"
+v1: someValue()
+
+
+def someValue(){
+  a: "A"
+  b: "B"
+}

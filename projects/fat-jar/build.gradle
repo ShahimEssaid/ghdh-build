@@ -1,0 +1,35 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "com.google.cloud.verticals.foundations.dataharmonization:runtime:${version}"
+//    implementation 'com.google.flogger:google-extensions:0.7.1'
+}
+
+mainClassName = 'com.google.cloud.verticals.foundations.dataharmonization.Main'
+
+tasks.register('fatJar', Jar) {
+}
+
+tasks.named('fatJar'){
+    manifest {
+        attributes 'Main-Class': "${mainClassName}"
+    }
+    destinationDirectory = layout.buildDirectory
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    archiveBaseName = "${project.name}"
+    from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+
+}
+
+tasks.named('assemble'){
+    dependsOn('fatJar')
+}
+
+
