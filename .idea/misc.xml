@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/git-submodule/upstream/proto" />
+    <file type="web" url="file://$PROJECT_DIR$/git-submodule/upstream/runtime" />
+    <file type="web" url="file://$PROJECT_DIR$/git-submodule/upstream/testutil" />
+    <file type="web" url="file://$PROJECT_DIR$/git-submodule/upstream/transpiler" />
+    <file type="web" url="file://$PROJECT_DIR$/maven-deploy-plugins" />
+    <file type="web" url="file://$PROJECT_DIR$/maven-deploy-runtime" />
+    <file type="web" url="file://$PROJECT_DIR$/projects/fat-jar" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/projects/maven-artifacts-example/pom.xml" />
+      </list>
+    </option>
+    <option name="workspaceImportForciblyTurnedOn" value="true" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" project-jdk-name="17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

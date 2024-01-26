@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/maven-deploy-runtime" name="maven-deploy-runtime">
+                <projects>
+                  <project path="$PROJECT_DIR$/git-submodule/upstream/proto" />
+                  <project path="$PROJECT_DIR$/git-submodule/upstream/runtime" />
+                  <project path="$PROJECT_DIR$/git-submodule/upstream/testutil" />
+                  <project path="$PROJECT_DIR$/git-submodule/upstream/transpiler" />
+                  <project path="$PROJECT_DIR$/maven-deploy-runtime" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/maven-deploy-plugins" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/git-submodule/upstream/plugins/example" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/plugins/harmonization/common" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/plugins/harmonization/hdev2" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/plugins/logging" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/plugins/reconciliation/reconcommon" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/plugins/reconciliation/reconv2" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/plugins/test" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/proto" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/runtime" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/testutil" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/transpiler" />
+            <option value="$PROJECT_DIR$/maven-deploy-plugins" />
+            <option value="$PROJECT_DIR$/maven-deploy-runtime" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/maven-deploy-runtime" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/git-submodule/upstream/proto" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/runtime" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/testutil" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/transpiler" />
+            <option value="$PROJECT_DIR$/maven-deploy-runtime" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/maven-deploy-runtime" name="maven-deploy-runtime">
+                <projects>
+                  <project path="$PROJECT_DIR$/git-submodule/upstream/proto" />
+                  <project path="$PROJECT_DIR$/git-submodule/upstream/runtime" />
+                  <project path="$PROJECT_DIR$/git-submodule/upstream/testutil" />
+                  <project path="$PROJECT_DIR$/git-submodule/upstream/transpiler" />
+                  <project path="$PROJECT_DIR$/maven-deploy-runtime" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/projects/fat-jar" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/git-submodule/upstream/proto" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/runtime" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/testutil" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/transpiler" />
+            <option value="$PROJECT_DIR$/maven-deploy-runtime" />
+            <option value="$PROJECT_DIR$/projects/fat-jar" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
