@@ -2,7 +2,7 @@
   <configuration default="false" name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
     <option name="MAIN_CLASS_NAME" value="example.Main" />
     <module name="maven-artifacts-example" />
-    <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+    <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="example.*" />

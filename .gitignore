@@ -21,3 +21,6 @@ gradle-app.setting
 .classpath
 #gradle-wrapper.jar
 maven-wrapper.jar
+
+.idea.*
+.idea-*
