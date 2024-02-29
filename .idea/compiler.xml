@@ -2,13 +2,6 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile name="Gradle Imported" enabled="true">
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.auto.value/auto-value/1.7.4/6b126cb218af768339e4d6e95a9b0ae41f74e73d/auto-value-1.7.4.jar" />
-        </processorPath>
-        <module name="maven-deploy-runtime.runtime.main" />
-      </profile>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -16,5 +9,24 @@
         <module name="maven-artifacts-example" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="example-mappings.main" target="17" />
+      <module name="example-mappings.test" target="17" />
+      <module name="extensions-cli.cli" target="17" />
+      <module name="extensions-cli.cli.main" target="17" />
+      <module name="extensions-cli.cli.test" target="17" />
+      <module name="extensions.cli" target="17" />
+      <module name="extensions.cli.main" target="17" />
+      <module name="extensions.cli.test" target="17" />
+      <module name="projects.upstream-distribution.buildSrc.main" target="17" />
+      <module name="projects.upstream-distribution.buildSrc.test" target="17" />
+      <module name="projects.upstream-distribution.cli.main" target="17" />
+      <module name="projects.upstream-distribution.cli.test" target="17" />
+      <module name="upstream-distribution.buildSrc" target="17" />
+      <module name="upstream-distribution.buildSrc.main" target="17" />
+      <module name="upstream-distribution.buildSrc.test" target="17" />
+      <module name="upstream-distribution.cli.main" target="17" />
+      <module name="upstream-distribution.cli.test" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -50,6 +51,81 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/projects/example-mappings" />
+        <option name="gradleHome" value="" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/projects/example-mappings" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/maven-deploy-runtime" name="maven-deploy-runtime">
+                <projects>
+                  <project path="$PROJECT_DIR$/git-submodule/upstream/proto" />
+                  <project path="$PROJECT_DIR$/git-submodule/upstream/runtime" />
+                  <project path="$PROJECT_DIR$/git-submodule/upstream/testutil" />
+                  <project path="$PROJECT_DIR$/git-submodule/upstream/transpiler" />
+                  <project path="$PROJECT_DIR$/maven-deploy-runtime" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/projects/extensions" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/git-submodule/upstream/proto" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/runtime" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/testutil" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/transpiler" />
+            <option value="$PROJECT_DIR$/maven-deploy-runtime" />
+            <option value="$PROJECT_DIR$/projects/extensions" />
+            <option value="$PROJECT_DIR$/projects/extensions/lib" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/projects/extensions" name="extensions">
+                <projects>
+                  <project path="$PROJECT_DIR$/projects/extensions" />
+                  <project path="$PROJECT_DIR$/projects/extensions/lib" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/maven-deploy-runtime" name="maven-deploy-runtime">
+                <projects>
+                  <project path="$PROJECT_DIR$/git-submodule/upstream/proto" />
+                  <project path="$PROJECT_DIR$/git-submodule/upstream/runtime" />
+                  <project path="$PROJECT_DIR$/git-submodule/upstream/testutil" />
+                  <project path="$PROJECT_DIR$/git-submodule/upstream/transpiler" />
+                  <project path="$PROJECT_DIR$/maven-deploy-runtime" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/projects/extensions-distribution" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/git-submodule/upstream/proto" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/runtime" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/testutil" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/transpiler" />
+            <option value="$PROJECT_DIR$/maven-deploy-runtime" />
+            <option value="$PROJECT_DIR$/projects/extensions" />
+            <option value="$PROJECT_DIR$/projects/extensions-distribution" />
+            <option value="$PROJECT_DIR$/projects/extensions-distribution/cli" />
+            <option value="$PROJECT_DIR$/projects/extensions/lib" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <compositeConfiguration>
           <compositeBuild compositeDefinitionSource="SCRIPT">
             <builds>
@@ -74,6 +150,35 @@
             <option value="$PROJECT_DIR$/git-submodule/upstream/transpiler" />
             <option value="$PROJECT_DIR$/maven-deploy-runtime" />
             <option value="$PROJECT_DIR$/projects/fat-jar" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/maven-deploy-runtime" name="maven-deploy-runtime">
+                <projects>
+                  <project path="$PROJECT_DIR$/git-submodule/upstream/proto" />
+                  <project path="$PROJECT_DIR$/git-submodule/upstream/runtime" />
+                  <project path="$PROJECT_DIR$/git-submodule/upstream/testutil" />
+                  <project path="$PROJECT_DIR$/git-submodule/upstream/transpiler" />
+                  <project path="$PROJECT_DIR$/maven-deploy-runtime" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/projects/upstream-distribution" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/git-submodule/upstream/proto" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/runtime" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/testutil" />
+            <option value="$PROJECT_DIR$/git-submodule/upstream/transpiler" />
+            <option value="$PROJECT_DIR$/maven-deploy-runtime" />
+            <option value="$PROJECT_DIR$/projects/upstream-distribution" />
+            <option value="$PROJECT_DIR$/projects/upstream-distribution/distribution" />
           </set>
         </option>
       </GradleProjectSettings>

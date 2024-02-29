@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/extensions.lib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/extensions.lib.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/extensions.lib.test.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/extensions.lib.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/ghdh-build.iml" filepath="$PROJECT_DIR$/.idea/ghdh-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/963471749/maven-deploy-plugins.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/963471749/maven-deploy-plugins.common.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/63433194/maven-deploy-plugins.reconcommon.main.iml" filepath="$PROJECT_DIR$/.idea/modules/63433194/maven-deploy-plugins.reconcommon.main.iml" />

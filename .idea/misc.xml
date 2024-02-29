@@ -2,13 +2,24 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/git-submodule/upstream/plugins/example" />
+    <file type="web" url="file://$PROJECT_DIR$/git-submodule/upstream/plugins/harmonization/common" />
+    <file type="web" url="file://$PROJECT_DIR$/git-submodule/upstream/plugins/harmonization/hdev2" />
+    <file type="web" url="file://$PROJECT_DIR$/git-submodule/upstream/plugins/logging" />
+    <file type="web" url="file://$PROJECT_DIR$/git-submodule/upstream/plugins/reconciliation/reconcommon" />
+    <file type="web" url="file://$PROJECT_DIR$/git-submodule/upstream/plugins/reconciliation/reconv2" />
+    <file type="web" url="file://$PROJECT_DIR$/git-submodule/upstream/plugins/test" />
     <file type="web" url="file://$PROJECT_DIR$/git-submodule/upstream/proto" />
     <file type="web" url="file://$PROJECT_DIR$/git-submodule/upstream/runtime" />
     <file type="web" url="file://$PROJECT_DIR$/git-submodule/upstream/testutil" />
     <file type="web" url="file://$PROJECT_DIR$/git-submodule/upstream/transpiler" />
     <file type="web" url="file://$PROJECT_DIR$/maven-deploy-plugins" />
     <file type="web" url="file://$PROJECT_DIR$/maven-deploy-runtime" />
+    <file type="web" url="file://$PROJECT_DIR$/projects/example-mappings" />
+    <file type="web" url="file://$PROJECT_DIR$/projects/extensions" />
+    <file type="web" url="file://$PROJECT_DIR$/projects/extensions-distribution" />
     <file type="web" url="file://$PROJECT_DIR$/projects/fat-jar" />
+    <file type="web" url="file://$PROJECT_DIR$/projects/upstream-distribution" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -16,7 +27,6 @@
         <option value="$PROJECT_DIR$/projects/maven-artifacts-example/pom.xml" />
       </list>
     </option>
-    <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_21" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

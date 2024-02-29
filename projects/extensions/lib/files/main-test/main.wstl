@@ -1,0 +1,7 @@
+import "mappings/file_a.wstl"
+import "./mappings/file_b.wstl"
+
+var var_1: "var 1"
+var var_2: "var 2"
+
+a_value: package_a::function_a()

@@ -1,0 +1,13 @@
+import "./fns.wstl"
+
+Hello: "Example 1"
+f1: "some string"
+v1: someValue()
+
+fns[]: fns::fns_1()
+
+
+def someValue(){
+  a: "A"
+  b: "B"
+}

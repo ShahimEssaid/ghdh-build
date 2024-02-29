@@ -1,0 +1,3 @@
+package package_a
+
+def function_a() "value a"

@@ -1,0 +1,5 @@
+
+def _ex_config(){
+  module_priority:  15
+  module_id: "function_examples_test"
+}

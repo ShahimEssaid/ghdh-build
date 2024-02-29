@@ -1,0 +1,15 @@
+{
+  "true": true,
+  "string": "some string",
+  "number": 1,
+  "null": null,
+  "object": {
+    "string": "Nested object"
+  },
+  "number_array": [
+    1,
+    2
+  ],
+  "empty_array": [],
+  "empty_object": {}
+}

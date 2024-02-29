@@ -1,0 +1,12 @@
+package package_a
+
+def function_a() {
+
+  // this is an error
+  //root_val: $root
+  $root: "set root"
+  var file_a_var_1: "file a var 1 value"
+  value: "function a value"
+}
+
+

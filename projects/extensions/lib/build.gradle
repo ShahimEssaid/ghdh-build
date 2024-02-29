@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id "io.freefair.lombok"
+}
+
+group = 'com.essaid.google.harmonization.extensions'
+version = 'unspecified'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("com.google.cloud.verticals.foundations.dataharmonization:runtime")
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}

@@ -1,0 +1,6 @@
+import "mappings/file_a.wstl"
+import "mappings/file_b.wstl"
+
+a_value: package_a::function_a()
+
+def some_function() "Some function"
