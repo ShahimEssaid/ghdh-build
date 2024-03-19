@@ -20,9 +20,30 @@ buildscript {
     }
 }
 
-rootProject.name = 'maven-deploy-runtime'
+rootProject.name = 'whistle_core'
 
-include 'proto'
+def docgenPath = java.nio.file.Path.of(rootDir.parentFile.getAbsolutePath(), "git-submodule/upstream/tools/docgen")
+def docgenExists = docgenPath.toFile().exists()
+// todo: disabling this for now
+docgenExists = false
+gradle.ext.set("docgenExists", docgenExists)
+if (docgenExists) {
+    includeBuild(docgenPath)
+}
+
+def annotationProcessorPath = java.nio.file.Path.of(rootDir.parentFile.getAbsolutePath(), "git-submodule/upstream/tools/annotation_processor")
+def annotationProcessorExists = annotationProcessorPath.toFile().exists()
+// todo: disabling this for now
+annotationProcessorExists = false
+gradle.ext.set("annotationProcessorExists", annotationProcessorExists)
+
+if(annotationProcessorExists){
+    includeBuild(annotationProcessorPath)
+}
+
+
+
+include ':proto'
 project(':proto').projectDir = file('../git-submodule/upstream/proto')
 
 include ':transpiler'
